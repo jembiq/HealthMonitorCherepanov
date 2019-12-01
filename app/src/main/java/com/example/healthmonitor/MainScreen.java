@@ -81,6 +81,8 @@ public class MainScreen extends AppCompatActivity {
                     UserAccStorage.setFullName(usrNameField.getText().toString());
                     UserAccStorage.setAge(Integer.parseInt
                             (usrAgeField.getText().toString()));
+
+                    welcomeToast();
                 }
                 catch (Exception e) {
                     Log.e(TAG, e.toString());
@@ -98,5 +100,13 @@ public class MainScreen extends AppCompatActivity {
                 Log.i(TAG, getString(R.string.log_visibility_status));
             }
         });
+    }
+
+    public void welcomeToast() {
+        final Toast welcomeToast = Toast.makeText(this,
+                getString(R.string.welcome_toast, UserAccStorage.getFullName(),
+                        UserAccStorage.getAge()), Toast.LENGTH_SHORT);
+
+        welcomeToast.show();
     }
 }
