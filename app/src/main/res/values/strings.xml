@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">HealthMonitor</string>
+    
+    <string name="full_name_field_hint">Full name</string>
+    <string name="age_field_hint">Age</string>
+    <string name="full_name_field"></string>
+    <string name="age_field"></string>
+    <string name="save_name_button">Save</string>
+    <string name="form_btn">Fill form</string>
+    <string name="pressure_btn">Pressure</string>
+    <string name="vital_stat">Vitality</string>
+    <string name="toast_error">Got an error</string>
+    
+    <string name="sys_hint">SYS, mmHg</string>
+    <string name="dia_hint">DIA, mmHg</string>
+    <string name="pulse_hint">Pulse, /min</string>
+    <string name="sys_val_txt"></string>
+    <string name="dia_val_txt"></string>
+    <string name="pulse_val_txt"></string>
+    <string name="save_press_button">Save</string>
+
+    <string name="measure_time">Sun Nov 13 00:00:00 2016</string>
+    <string name="sys_txt">SYS</string>
+    <string name="dia_txt">DIA</string>
+    <string name="pulse_txt">Pulse</string>
+    <string name="tachycardia">Tachycardia</string>
+    <string name="rad_yes">Yes</string>
+    <string name="rad_no">No</string>
+
+    <string name="log_inf_init">screen initialised</string>
+    <string name="log_visibility_status">visibility changed</string>
+    <string name="log_press_intent_change">moved to pressure screen</string>
+    <string name="log_vital_intent_change">moved to vitality screen</string>
+    <string name="log_try">trying...</string>
+    <string name="log_catch">got illegal value</string>
+</resources>
