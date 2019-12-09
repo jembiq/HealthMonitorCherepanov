@@ -19,6 +19,7 @@
     <string name="dia_val_txt"></string>
     <string name="pulse_val_txt"></string>
     <string name="save_press_button">Save</string>
+    <string name="back_to_main_button">Back to menu</string>
 
     <string name="measure_time">Sun Nov 13 00:00:00 2016</string>
     <string name="sys_txt">SYS</string>

@@ -81,7 +81,7 @@
 
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="wrap_content">
 
             <RadioButton
                 android:id="@+id/radYes"
@@ -95,6 +95,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/rad_no" />
         </RadioGroup>
+
+        <Button
+            android:id="@+id/backToMenuBtnVital"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/back_to_main_button" />
 
     </LinearLayout>
 

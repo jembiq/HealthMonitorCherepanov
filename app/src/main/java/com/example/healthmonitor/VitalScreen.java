@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +28,7 @@ public class VitalScreen extends AppCompatActivity {
         final TextView pulseValue = (TextView) findViewById(R.id.pulseField);
         Toast toast = Toast.makeText(this,
                 getString(R.string.toast_error), Toast.LENGTH_SHORT);
+        Button backToMenuBtn = findViewById(R.id.backToMenuBtnVital);
 
         Log.i(TAG, getString(R.string.log_inf_init));
 
@@ -36,6 +39,13 @@ public class VitalScreen extends AppCompatActivity {
             sysValue.setText("" + PressStorage.getSys());
             diaValue.setText("" + PressStorage.getDia());
             pulseValue.setText("" + PressStorage.getPulse());
+
+            backToMenuBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish();
+                }
+            });
         }
         catch (Exception e) {
             Log.e(TAG, e.toString());

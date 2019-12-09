@@ -29,6 +29,7 @@ public class PressureScreen extends AppCompatActivity {
         final EditText dia = (EditText) findViewById(R.id.diaField);
         final EditText pulse = (EditText) findViewById(R.id.pulseField);
         Button saveBtn = (Button) findViewById(R.id.savePressBtn);
+        Button backToMenuBtn = findViewById(R.id.backToMenuBtnPress);
         final Toast toast = Toast.makeText(this,
                 getString(R.string.toast_error), Toast.LENGTH_SHORT);
 
@@ -52,6 +53,13 @@ public class PressureScreen extends AppCompatActivity {
                     Log.e(TAG, e.toString());
                     toast.show();
                 }
+            }
+        });
+
+        backToMenuBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }
